@@ -1777,6 +1777,10 @@ footer .copyright{
 
   .jeancard-container {
     justify-content: space-evenly;
+    
+  }
+
+  .jeancard{
     width: 185px;
   }
 
