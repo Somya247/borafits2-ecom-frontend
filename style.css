@@ -1,0 +1,1787 @@
+/* html {
+  height: 100%;
+  width: 100%;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+body {
+/*   height: 100%; */
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  
+}
+
+
+.weprovide {
+  background-color:#f5f4f5;
+  color: #000000; 
+  text-align: center;
+  padding: 6px;
+
+}
+
+.weprovide-text {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 15px 0 -28px 0;
+}
+
+
+
+
+h2 {
+  font-size: 50px;
+  line-height:64px;
+  color:#ffffff;
+  
+}
+
+h3 {
+  font-size: 36px;
+  line-height:54px;
+  color:#222;
+}
+
+h4{
+  font-size: 20px;
+/*   line-height:54px; */
+  color:#222;
+ font-family: "Times New Roman", Times, serif;
+}
+
+h6{
+  font-size: 18px;
+  line-height:12px;
+/*   color:#222; */
+  font-family: "Times New Roman", Times, serif;
+}
+
+h5{
+   font-family: "Times New Roman", Times, serif;
+
+}
+
+
+p{
+  font-size: 16px;
+/*   line-height:54px; */
+  margin:15px 0 28px 0;
+
+}
+
+
+#hero p{
+  font-size: 16px;
+/*   line-height:54px; */
+  color:#00ff91;
+  margin:15px 0 28px 0;
+}
+
+
+
+.section-p1 {
+  padding:40px 80px;
+}
+
+/* ad banner */
+.section-m1{
+  padding:40px 0;
+}
+
+
+/* button common | global styling*/
+button.normal{
+  font-size: 14px;
+  font-weight:600;
+  padding:15px 30px;
+  color:#000;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor:pointer;
+  border:none ;
+  outline:none;
+  transition:0.2s;
+
+}
+
+
+/* button for small banner */
+button.white{
+  font-size: 13px;
+  font-weight:600;
+  padding:11px 18px;
+  color:#fff;
+  background-color: transparent;
+  border-radius: 4px;
+  cursor:pointer;
+  border:1px solid white;
+  outline:none;
+  transition:0.2s;
+
+}
+
+.details h2{
+  color:black;
+}
+
+.formore{
+  font-size: 13px;
+  font-weight:600;
+  padding:11px 18px;
+  color:#81087c;
+  background-color: transparent;
+  border-radius: 4px;
+  cursor:pointer;
+  border:1px;
+  outline:none;
+  transition:0.2s;
+}
+
+.formore:hover{
+  background: #BC13FE;
+color:#fff;
+  
+}
+
+/* div class */
+.formorebutton{
+  display:flex;
+  align-items:center;
+justify-content: center;
+    flex-direction: column;
+}
+
+.button2 {
+white-space: nowrap; /* Prevent line breaks within the button text */
+overflow: hidden; /* Hide any content that overflows the button's width */
+background-color: #81087c;
+color: #fff;
+padding: 10px 20px;
+font-size: 16px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+  font-size: 13px;
+  font-weight:600;
+  padding:11px 18px;
+  /* color:#81087c; */
+  /* background-color: transparent; */
+  border-radius: 4px;
+  cursor:pointer;
+  border:1px solid white;
+  outline:none;
+  transition:0.2s;
+  text-decoration:none;
+}
+
+
+.button2:hover{
+  background: #BC13FE;
+color:#fff;
+}
+
+
+/* slider */
+  .slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 585px; /* Change this height as needed */
+  }
+  
+  .slide {
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+  
+  /* Show the first image initially */
+  .slide:first-child {
+    display: block;
+  }
+
+#product1 h4{
+  color:black;
+  font-size:30px;
+}
+
+.bg{
+   background-color:#f5f4f5;
+}
+
+
+
+
+/* header */
+
+#header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:20px 80px;
+  background-color:#e4baf7;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  z-index:999;
+  position:sticky;
+  top:0;
+  left:0;
+  
+}
+
+/* header logo */
+.header-logo{
+  /* CSS styles for the logo */
+    width: 150px; /* Set the width of the logo */
+    height: auto; /* Preserve aspect ratio */
+    display: block; /* Make the image a block element */
+    margin: 0 auto; /* Center the logo horizontally */
+    /* border: 2px solid #ccc; /* Add a border around the logo (optional) */
+    /* border-radius: 50%; /* Make the logo circular (optional) */ 
+
+}
+
+/* navbar  */
+#navbar{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+}
+
+#navbar li{
+  list-style:none;
+  padding:0 20px;
+  position:relative; /*for active after that will add underline for active page, this is parent element of #navbar li a.active::after*/
+
+}
+
+#navbar li a{
+  text-decoration:none;
+  font-size:18px;
+  color:#000000;
+  font-weight:600;
+  transition:0.3s ease; 
+  /* font-family: 'Lato', sans-serif;  */
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+  color:#81087c;
+}
+
+/* pseudo class, this will add hover line and effects */
+#navbar li a.active::after,
+#navbar li a:hover::after{
+  content:"";
+  width:30%;
+  height:2px;
+  background:#81087c;
+  position:absolute;
+  bottom:-4px;
+  left:20px;
+}
+
+/* this will hide the hamburger menu and shopping bag icon in tablet device */
+#mobile{
+display:none;
+align-items: center;
+}
+/* but this will also remove them when the screen is small again so go media query and change there */
+
+
+/* to hide the close button from desktop screen */
+#close{
+  display:none;
+}
+/* but this will also remove the close button from ha,burger menu of tablet screen */
+
+
+/* home page hero section  */
+#hero{
+  background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("https://i.pinimg.com/originals/8d/e0/34/8de0341cf4583840c9ef70359d8bd45b.jpg");
+  height:90vh;
+  width:100%; /*increasing the height and width of image of hero*/
+  background-position: top 25% right 0; /*setting the position of the hero image*/
+  background-size: cover;
+  padding: 0 80px; /*centering the text*/
+/*   for centering the text and adding flex to it */
+  display:flex;
+  flex-direction:column; /*since flex is row in default*/
+  align-items:flex-start;
+  justify-content:center;
+}
+
+#hero h4{
+ padding-bottom:15px;
+  
+}
+
+#hero h4{
+  color:#ffffff;
+}
+
+#hero h1{
+  color:#ffffff;
+}
+
+#hero button{
+  /* background-image:url("static/img/button.png"); */
+  background-color:white;
+  color:black;
+  border:0;
+  padding:14px 80px 14px 65px;
+  background-repeat:no-repeat;
+  cursor:pointer;
+  font-weight:700;
+  font-size:15px;
+  border-radius:4px;
+}
+
+
+#hero button:hover{
+  background: #BC13FE;
+  color:white;
+}
+
+
+/* feature section */
+
+#feature{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  background-color: #f5f4f5;
+}
+
+
+
+#feature .fe-box{
+  width:180px;
+  text-align:center;
+  padding:25px 15px;
+  box-shadow: 20px 20px 34px rgba(0,0,0,0.03);
+  border:1px solid #cce7d0;
+  border-radius:4px;
+  margin:15px 0; /*left right*/
+}
+
+#feature .fe-box:hover{
+  box-shadow: 10px 0px 34px rgba(70,62,221,0.01); /*decreasing the box shadow and increasing the radius*/
+}  
+
+/* to make images responsive */
+#feature .fe-box img{
+    width:100%;
+    margin-bottom:10px;
+}
+
+
+#feature .fe-box h6{
+    display:inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height:1;
+    border-radius:4px;
+    color:#BC13FE;
+    background-color:#fddde4;
+}
+
+/* for adding differnet background color to second child of h6/ 2nd box */
+#feature .fe-box:nth-child(2) h6{
+    background-color:#cdebbc;
+}
+
+#feature .fe-box:nth-child(3) h6{
+    background-color:#d1e8f2;
+}
+
+#feature .fe-box:nth-child(4) h6{
+    background-color:#cdd4f8;
+}
+
+#feature .fe-box:nth-child(5) h6{
+    background-color:#f6dbf6;
+}
+
+#feature .fe-box:nth-child(6) h6{
+    background-color:#fff2e5;
+}
+
+/* jeans card */
+.jeancard {
+  width: 219px; /* Set the desired width for the card */
+  height: 283px; /* Set the desired height for the card */
+  background-color: white;
+  border-radius: 8px;
+ 
+  overflow: hidden;
+  padding:10px;
+  margin-top:20px;
+  margin-bottom:20px;
+  display: flex;
+  justify-content:center;
+  flex-wrap:wrap;
+   text-align:center;
+}
+
+.jeancard:hover{
+   /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+
+ box-shadow: 20px 20px 30px rgba(0,0,0,0.05);  
+   background: #ffffff;
+  box-shadow: 0 8px 8px -4px #BC13FE;
+  
+}
+
+.jeancard-image {
+  width: 100%;
+  height: 235px; /* Set the desired height for the card image */
+  object-fit: cover;
+}
+
+.jeancard-content {
+  padding: 8px;
+}
+
+.jeancard-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.jeancard-text {
+  font-size: 14px;
+  color: #555;
+}
+
+.jeancard-container {
+  display: flex;
+  justify-content: space-between; /* To evenly distribute cards in a row */
+  flex-wrap: wrap; /* To wrap cards to the next line if there's not enough space */
+}
+
+
+
+
+
+/* products */
+
+#product1{
+    text-align: center;
+}
+
+/* product cards alignment of 4 in one */
+#product1 .pro-container{
+  display:flex;
+  justify-content:space-between;
+  padding-top:20px;
+  flex-wrap: wrap;
+}
+
+
+/* product image || parent element me add karna hoga position relative taki cart button position ho sake  */
+#product1 .pro{
+width:23%;
+  /* height:20%; */
+min-width:250px;
+padding:10px 12px;
+border: 1px solid #cce7d0;
+border-radius: 25px;
+cursor: pointer;
+box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+margin:15px 0;
+/* transition: 0.2s ease; */
+position: relative;
+}
+
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.05);  
+   background: #ffffff;
+  box-shadow: 0 8px 8px -4px #BC13FE;
+}
+
+/* to make the image size of border */
+
+#product1 .pro img{
+    width:100%;
+    border-radius: 20px;
+    }
+
+/* styling description */
+    #product1 .pro .des{
+text-align: start;
+padding: 10px 0;
+    }
+
+    #product1 .pro .des span{
+        color: #606063;
+        font-size: 12px;
+    }
+
+    #product1 .pro .des h5{
+    padding-top:7px;
+    color:#1a1a1a;
+    font-size:16px;
+
+    }
+
+    #product1 .pro .des i{
+        font-size: 12px;
+        color:rgb(243,181,25);
+    }
+
+    #product1 .pro .des h4{
+    padding-top:7px;
+    color:#BC13FE;
+    font-size:14px;
+    font-weight: 700; 
+    }
+
+    #product1 .pro .cart{
+     width:40px;
+     height:40px;
+     line-height:40px;
+     border-radius: 50px;
+     background-color: #e8f6ea;
+     font-weight: 500;
+     color:#BC13FE;
+     border:1px solid #cce7d0;
+    position:absolute;
+    bottom:10px; /*it was 20 before*/
+    right:10px;
+    }
+    
+/* upto 70% off wala banner */
+    #banner{
+      display:flex;
+       flex-direction:column;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       background-image: url("https://i.pinimg.com/originals/7a/e9/c2/7ae9c2c1b08863cdf8ba0114f6521dfd.jpg");
+      /* adding these to increase the size of banner image because banner image was only taking the height and width of banner text  */
+       width:100%;
+       height:57vh;
+       background-size:cover;
+       background-position:center;
+       /* filter: blur(2px);
+        */
+        /* backdrop-filter: blur(25px); */
+
+    }
+
+    #banner h2{
+color:#fff;
+font-size:16px;
+
+    }
+
+    #banner h2{
+      color:#fff;
+      font-size:30px;
+      padding:13px 0 76px 18px;
+
+    }
+
+    #banner h2 span{
+      color:red;
+    }
+
+#banner button:hover{
+  background: #BC13FE;
+color:#fff;
+}
+
+/* to align both the banners in one column */
+#sm-banner{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+/* ad banner 2 |small banner  */
+#sm-banner .banner-box{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: flex-start;
+  /* text-align:center; */
+   background-image: url("https://i.pinimg.com/originals/8b/ea/a4/8beaa4b5221ce754cde29ede04ef341a.jpg"); 
+  min-width:580px;
+   height:50vh;
+   background-size:cover;
+   background-position:center;
+   padding:30px;
+
+   /* right now this will take the whole place but when we add another banner it will reduce the size */
+
+}
+
+#sm-banner h4{
+color:#fff;
+font-size:20px;
+font-weight:300;
+}
+
+#sm-banner span{
+  color:#fff;
+  font-size:14px;
+  font-weight:500;
+  padding-bottom:15px;
+  
+  }
+
+  /* small banner button hover  */
+  #sm-banner .banner-box:hover button{
+background-color: #BC13FE;
+border:1px solid #BC13FE;
+  }
+
+
+  /* for adding a different image in the small banner box 2 */
+  #sm-banner .banner-box2{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("https://www.allkpop.com/upload/2018/05/af_org/08110434/bts.jpg"); 
+  }
+ 
+  /* tiny banner / banner 3 */
+  #banner3 .banner-box{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("https://i.pinimg.com/originals/ce/5f/05/ce5f0508f9557bf3801ef149eb228f41.jpg");
+    min-width:30%;
+     height:30vh;
+     background-size:cover;
+     background-position:center;
+     padding:20px;
+     margin-bottom:20px;
+
+  }
+
+/* to change image of tiny banners */
+
+ #banner3 .banner-box2{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("https://i.pinimg.com/originals/46/c9/98/46c9983902d40f44482548e91bbaf85e.jpg");
+
+ }     
+
+ #banner3 .banner-box3{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("https://i.pinimg.com/564x/3a/e0/42/3ae042ead001b1392ef0ccf0dd115bfd.jpg")
+ } 
+
+  #banner3 h2{
+color:#fff;
+font-weight:900;
+font-size:22px;
+  } 
+
+  
+  #banner3 h3{
+    color:#ffffff;
+    font-weight:800;
+    font-size:15px;
+      }
+
+/* to align tiny banners in a row */
+      #banner3{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0 80px;
+      }
+
+
+ #newsletter{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        background-image: url("img/banner/b14.png");
+        background-repeat:no-repeat;
+        background-position:20% 30%;
+        background-color: #d58df7;
+
+ }
+ 
+  #newsletter h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  }
+  
+
+  #newsletter p{
+    font-size: 22px;
+    font-weight: 600;
+    color: #470061;
+  }
+
+  #newsletter p span{
+    color: yellow;
+    }
+    
+  
+  #newsletter input {
+  height: 3.125rem;
+  padding: 0 1.25em;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  border-top-right-radius: 0; /*this will remove border radius*/
+  border-bottom-right-radius: 0;
+  
+  }
+
+  
+    #newsletter button {
+      background-color: #81087c;
+      color:#fff;
+      white-space: nowrap;
+      border-top-left-radius: 0;/*this will remove border radius*/
+      border-bottom-left-radius: 0;
+
+ }
+ 
+  #newsletter .form {
+  display: flex;
+  width: 40%;
+   }
+  
+/* footer */
+
+footer{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+       /* background-color:#f9dcf9; */
+  font-family: "Times New Roman", Times, serif;
+  background-color:#fbf9f9;
+}
+
+footer .follow .icon{
+     display: flex;
+  gap: 10px;
+  }
+
+
+.payp {
+    font-size: 23px;
+    margin: 15px 0 6px 0;
+  color:#81087c;
+}
+
+/* for making links in one column */
+footer .col{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+footer .logo{
+  margin-bottom:30px ;
+}
+
+footer h4{
+font-size: 34px;
+padding-bottom: 20px;
+}
+
+footer p{
+  font-size: 13px;
+  margin: 0 0 8px 0;
+  
+}
+
+footer a{
+  font-size: 13px;
+  text-decoration: none;
+  margin: 10px;
+  color:#222;
+  
+}
+
+footer .follow{
+  font-size: 13px;
+  margin-top: 20px;
+   
+}
+
+footer .follow .i{
+color:#465b52;
+padding-right: 4px;
+cursor: pointer;  
+}
+
+footer .install .row{
+  border: 1px solid #BC13FE;
+  border-radius: 6px;
+}
+
+footer .install img{
+  margin: 10px 0 15px 0;
+}
+
+/* for adding hover effect and color to all the anchor tags and icons */
+footer .follow i:hover,
+footer a:hover{
+color:#BC13FE;
+}
+
+/* this will center the copyright */
+footer .copyright{
+  width:100%;
+  text-align:center;
+}
+
+
+/* shop page */
+
+#page-header{
+background-image: linear-gradient(rgba(0, 0, 0, -1.5), rgba(0, 0, 0, 0.5)),url('https://i.pinimg.com/originals/5e/dd/10/5edd102ffba4b5e03c010d1822155d9c.jpg');
+width: 100%;
+height: 40vh;
+background-size: cover;
+/* to center the text */
+display: flex;
+justify-content: center;
+text-align: center;
+flex-direction: column;
+padding:14px ;
+}
+
+/* change the color of text */
+#page-header h1,
+#page-header h3,
+#page-header h4{
+color: #fff;
+}
+
+#page-header h1{
+  font-size:75px;
+}
+
+/* pagination buttons */
+#pagination{
+  text-align: center;
+
+}
+
+
+#pagination a{
+  text-decoration: none;
+  background-color: #BC13FE;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 600;
+}
+
+#pagination a i{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* single product images */
+
+/* for space between images */
+.small-img-col{
+  flex-basis: 24%;
+  cursor: pointer;
+  }
+
+/* for image and details in one row*/
+#prodetails{
+   display: flex;
+   margin-top: 20px;
+}
+
+
+#prodetails .single-pro-image {
+  width: 40%;
+  margin-right: 50px;
+  }
+  
+/* for images in one row */
+  .small-img-group {
+  display: flex;
+  justify-content: space-between;
+}
+  
+#prodetails .single-pro-details{
+  width:50%;
+ padding-top: 30px; 
+}
+
+#prodetails .single-pro-details h4{
+  padding: 40px 0 20px 0;
+}
+
+#prodetails .single-pro-details h2{
+ font-size: 26px;
+}
+
+/*i changed the font size, there was no font size for h6 before */
+#prodetails .single-pro-details h6{
+  font-size: 14px;
+ }
+
+ /* drop down menu of size  */
+ #prodetails .single-pro-details select{
+  display: block;
+  padding: 5px 10px;
+  padding-top:10px;
+  margin-top: 10px; /*added padding top and margin top because select button was not showing properly in mobile screen*/
+  margin-bottom: 10px;
+ }
+
+/* input */
+#prodetails .single-pro-details input {
+width: 50px;
+height: 47px;
+padding-left: 10px;
+font-size: 16px;
+margin-right: 10px;
+}
+
+/* remove outline from th box */
+#prodetails .single-pro-details input:focus{
+  outline: none;
+ }
+
+ /* to add line height in description of product */
+ #prodetails .single-pro-details span{
+  line-height: 25px;
+ }
+
+/* button */
+#prodetails .single-pro-details button{
+  background-color: #BC13FE;
+  color: #fff;
+}
+
+
+/* contact page header */
+
+#page-header.contact-header{
+  background-image: url('https://i.pinimg.com/originals/c4/fd/63/c4fd633b9ef8e7d606c60c354fecc3cf.jpg');
+ }
+
+ /*blog page  */
+
+ #page-header.blog-header{
+  background-image: url('https://i.pinimg.com/564x/fd/0f/65/fd0f65d54a3806af85ccafbf9bf41e8a.jpg');
+ }
+ #blog{
+padding: 150px 150px 0 150px;
+   
+ }
+
+ /* to put in one row */
+ #blog .blog-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+
+  /* add space between blogs articles */
+  padding-bottom: 90px;
+  }
+
+
+  #blog .blog-img {
+  width: 50%;
+  margin-right: 40px;
+  }
+
+/* just the image */
+  #blog img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  }
+
+  /* blog description */
+    #blog .blog-details {
+    width: 50%;
+    }
+
+    /* continue reading button */
+    #blog .blog-details a{
+    text-decoration: none;
+    font-size: 11px;
+    color: #000;
+    font-weight: 700;
+    position: relative;
+    transition: 0.3s;
+    }
+
+/* continue reading line */
+    #blog .blog-details a::after {
+      content: "";
+      width: 50px;
+      height: 1px;
+      background-color: #000;
+      text-decoration: none;
+      font-size: 11px;
+      color: #000;
+      font-weight: 700;
+      position: absolute; /*every   time we use absolute in child element we have to use relative in parent element*/
+      top: 4px;
+      right: -60px;
+    }
+
+    #blog .blog-details a:hover {
+    color: #81087c;
+    }
+
+    #blog .blog-details a:hover::after {
+    background-color: #81087c;
+    }
+
+    #blog .blog-box h1 {
+    position: absolute;
+    top: -58px; /*was 40 before*/
+    left: 0;
+    font-size: 70px;
+    font-weight: 700;
+    color: #c9cbce;
+    z-index: -9; /*can use any value here but it should be minus value if want to put element behind another element*/
+    }
+
+/* about page */
+#page-header.about-header {
+  background-image: url("https://i.pinimg.com/564x/fd/28/95/fd28955ac6992ab8ed6ba3d53d903172.jpg");
+
+}
+/* idk why here the . when its close with page-header is only working but for every other css it was fine */
+
+#page-header.about-header{
+color:white;
+  font-size:25px;
+}
+
+/* know us page */
+#about-head{
+  display: flex;
+  align-items: center;
+}
+
+#about-head img{
+  width: 50%;
+  height: auto;
+}
+
+#about-head div{
+  padding-left: 40px;
+}
+
+/* video */
+#about-app{
+  text-align: center;
+}
+
+/* for video */
+#about-app .video{
+  width: 70%;
+  height: 100%;
+  /* to center the video part */
+  margin: 30px auto 0 auto;
+}
+
+#about-app .video video{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+/* about us page */
+
+#contact-details{
+  /* to align in one row */
+display: flex;
+align-items: center;
+justify-content: center;
+  
+}
+
+
+#contact-details .details{
+width:40%;
+}
+
+
+  #contact-details .details span,
+  #form-details form span {
+  font-size: 12px;
+
+  /* for span tag of form */
+
+  }
+
+
+  #contact-details .details h2,
+  #form-details form h2 /* h2 of form */{
+  font-size: 26px;
+  line-height: 35px;
+  padding: 20px 0;
+  }
+
+  #contact-details .details h3{
+    font-size: 16px;
+    padding-bottom: 15px;
+    }
+
+#contact-details .details li {
+list-style: none;
+display: flex;
+padding: 10px 0;
+}
+
+/* icon */
+#contact-details .details li i {
+font-size: 14px;
+padding-right: 22px;
+}
+
+
+#contact-details .details li p {
+margin: 0;
+font-size: 14px;
+}
+
+#contact-details .map {
+  width: 55%;
+  height: 400px;
+  }
+
+
+  #contact-details .map iframe {
+  width: 100%;
+  height: 100%;
+  }
+
+
+/* form of about us page */
+
+#form-details form {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+  }
+
+  #form-details form input,
+  #form-details form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  outline: none;
+  margin-bottom: 20px;
+  border: 1px solid #e1e1e1;
+
+}
+
+#form-details form button{
+  background-color: #BC13FE;
+  color: #fff;
+  /* margin-bottom: 20px; */
+}
+
+
+
+/* member  */
+
+/* for aligning member and form in one row */
+#form-details{
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  padding: 80px;
+  border: 1px solid #e1e1e1;
+}
+
+#form-details .people div{
+  padding-bottom: 25px;
+  /* to make member in one row */
+  display: flex;
+  align-items: flex-start;
+  }
+
+
+  #form-details .people div img{
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  margin-right: 15px;
+  }
+
+
+#form-details .people div p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 25px;
+  }
+
+
+  #form-details .people div p span {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  }
+
+#form-details form h2{
+        color:black;
+      }
+
+/* cart page */
+
+/* created a slider for tablet screen device table in cart section of products, this is working for mobile too */
+#cart{
+overflow:auto;
+font-family: "Times New Roman", Times, serif;
+}
+
+#cart table{
+  width: 100%;
+  border-collapse:collapse;
+  table-layout: fixed;
+  white-space: nowrap;
+  
+}
+
+#cart table img{
+width:70px;
+}
+
+/* because table data was collapsing on each other */
+
+#cart table td:nth-child(1){
+  width:100px;
+  text-align: center;
+
+}
+
+#cart table td:nth-child(2){
+  width:150px;
+  text-align: center;
+  
+}
+
+
+#cart table td:nth-child(3){
+  width:250px;
+  text-align: center;
+  
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+  width:150px;
+  text-align: center;
+  
+}
+
+
+/* total number of product selector */
+#cart table td:nth-child(5) input{
+  width: 70%; /*it is 70px but it isnt working*/
+  padding: 10px 5px 10px 50px;
+}
+
+/* headings */
+#cart table thead{
+  border: 1px solid #e2e9e1;
+  border-left: none;
+  border-right: none;
+
+}
+
+#cart table thead td{
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 18px 0;
+}
+
+
+/* for spacing from above for image and other */
+
+#cart table tbody tr td{
+  padding: 15px;
+} 
+
+/* for font size of text inside table */
+#cart table tbody td{
+font-size: 13px;
+}
+
+ /* for making apply coupon and total price section in onw row*/
+
+#cart-add{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+/* for adding width */
+
+/* when using id we dont need to use parent id */
+#coupon{
+  width: 50%;
+  margin-bottom: 30px; 
+}
+
+#coupon h3,
+#subtotal h3{
+  padding-bottom: 15px;
+
+}
+
+#coupon input{
+padding: 10px 20px;
+outline: none;
+width:60%;
+margin-right:10px;
+border: 1px solid #e2e9e1;
+}
+
+#coupon button,
+#subtotal button{
+  background-color: #BC13FE;
+  color:#fff;
+  /* to make the button size of input sction */
+  padding: 12px 20px;
+}
+
+#subtotal button:hover{
+  background-color:#81087c;
+}
+
+/* cart total  */
+
+#subtotal{
+  width: 50%;
+  margin-bottom: 30px;
+  border: 1px solid #e2e9e1;
+  padding:30px ;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#subtotal table{
+  border-collapse:collapse ;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* sstyle table data */
+#subtotal table td{
+  width: 50%;
+  border: 1px solid #e2e9e1;
+  padding: 10px;
+  font-size: 13px;
+}
+
+
+
+
+/* for making responsive */
+
+/* navbar / hamburger menu*/
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* for tablet version */
+
+/* media queries */
+@media(max-width:799px){
+
+  /* this will make feature box in 3 column */
+  .section-p1{
+    padding: 40px 40px
+  }
+
+
+  #navbar{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    position: fixed;
+    top:0;
+    right: -300px; /* this will make navbar will only show when clicked on a hamburger menu*/
+    height: 100vh;
+    width: 300px;
+    background-color:#E3E6F3 ;
+    box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+    padding: 80px 0 0 10px;
+    /* for sliding effect */
+    transition: 0.3s;
+  }
+
+  /* active class of js */
+  #navbar.active{
+    right:0px;
+  }
+
+#navbar li{
+  margin-bottom: 25px;
+}
+/* this will add hamurger menu and shopping bag icon back when we reduce screen size for tablet device */
+#mobile{
+  display:flex;
+  align-items: center;
+  }
+
+
+  #mobile i{
+    color: #1a1a1a;
+    font-size: 24px;
+    padding-left: 20px;
+    }
+
+    /* for positioning the close button and adding it to hamburger of tablet screen only */
+    #close{
+display:initial;
+position:absolute;
+top:30px;
+left:30px;
+color:#222;
+font-size: 24px;
+    }
+
+    /* this will rmeove the shopping bag icon from tablet device screen */
+    #lg-bg{
+      display: none;
+    }
+
+
+    /* hero section image responsiveness */
+    #hero{
+      
+     display:none;
+   
+    }
+
+    /* to center the boxes in feature section */
+    #feature {
+     
+      justify-content: center;
+    
+    }
+
+    /* to add equal space form l r t b and comming in three columns so add section-p1 class*/
+    #feature .fe-box{
+      margin: 15px 15px;
+    }
+
+    /* to remove unneccessary space */
+    #product1 .pro-container{
+      justify-content: center;
+    }
+
+    #product1 .pro{
+      margin: 15px ;
+    }
+
+    /* to reduce the height of banner */
+    #banner{
+      height:30vh;
+      background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://i.pinimg.com/originals/d1/ed/27/d1ed277db6d00d98fe1b8b8baff627f4.jpg");
+    }
+
+    /* to take the full width */
+    #sm-banner .banner-box{
+      min-width: 100%;
+      height:30vh;
+    }
+
+    /* to remove extra padding */
+    #banner3{
+      padding:0 40px;
+    }
+
+    #banner3 .banner-box{
+      width:28%;
+    }
+
+    /* increase the size of form/email */
+    #newsletter .form{
+width : 70%;
+    }
+}
+
+
+/* contact page */
+#form-details{
+  padding: 40px; /*since it was taking extra space with padding before*/
+}
+
+#form-details form{
+  width: 50%;
+}
+  /* #feature2 {
+   
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  
+} */
+
+
+/* ////////////////////////////////////////// */
+/* resposiveness for mobile devices */
+@media(max-width:477px){
+  /* navbar is having too much space so reducing that */
+  #header{
+    padding:10px 30px;
+  }
+  h1{
+    font-size: 38px;
+  }
+  h2{
+    font-size: 32px;
+  }
+
+  h3{
+    font-size:30px;
+  }
+
+  #product1 p{
+    font-size: 14px;
+    margin: 0px 0 28px 0;
+  }
+/* 
+   #product1 .pro-container .pro{
+    font-size: 14px;
+    margin: 15px;
+     padding-top:0px;
+  } */
+
+  #hero{
+    padding:0 20px;
+    background-position: 55%;
+  }
+
+  /* to decrase the space or padding in feature boxes and make them 2 in a column */
+  .section-p1{
+    padding: 20px ; /*was 20px before made it 30*/
+  }
+
+  #feature .fe-box{
+    width:155px;
+    margin: 0 0 15px 0;
+  }
+
+  /* to add space between two feature boxes  */
+  #feature{
+    justify-content: space-evenly;
+  }
+
+  /* its not taking 100% width */
+  #product .pro{
+    width:100%;
+  }
+
+  /* to increase the height of banner */
+#banner {
+  height:40vh;
+}
+
+/* text height increase in small banner */
+
+#sm-banner .banner-box{
+  height:40vh;
+}
+
+/* space between two banners */
+#sm-banner .banner-box2{
+  margin-top:20px;
+}
+
+/* decrease extra padding/space */
+#banner3{
+  padding: 0 20px;
+}
+
+/* to make banner take full width */
+#banner3 .banner-box{
+  width: 100%;
+}
+
+/* form takes full width*/
+#newsletter .form{
+width: 100%;
+}
+
+#newsletter{
+  padding: 40px 20px;
+}
+
+/* to change copyright align */
+footer .copyright{
+  text-align: start;
+}
+
+
+
+/* single product mobile responsive*/
+
+/* description and image in one column */
+  #prodetails{
+    display: flex;
+    flex-direction: column;
+
+  }
+  /* fix the width */
+  #prodetails .single-pro-image{
+width:100%;
+/* margin-right: 0px; */
+  }
+    
+  #prodetails .single-pro-details{
+width:100%;
+  }
+
+
+  /* blog responsiveness */
+
+#blog{
+  padding:100px 20px 0 20px; 
+}
+
+  /* to make in one column */
+#blog .blog-box{
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+/* to make imag take 100% width */
+#blog .blog-img{
+  width: 100%;
+  margin-right: 0px;
+  margin-bottom: 30px;
+}
+  #blog .blog-details{
+    width:100%;
+  }
+
+
+  /* about us page for mobile screen*/
+  #about-head{
+    flex-direction: column;
+
+  }
+
+  /* for image */
+  #about-head img{
+   width: 100%;
+   margin-top: 20px;
+
+  }
+
+  #about-head div{
+    padding-left: 0px;
+  }
+
+  /* to make video take full width */
+  #about-app .video{
+    width: 100%;
+  }
+
+  /* contact page */
+  #contact-details{
+    flex-direction: column; /*it was in row before so had to change for mobile screen*/
+  }
+
+  #contact-details .details{
+    width: 100%; /*it was taking only 40% before so had to change for mobile screen*/
+    margin-bottom: 30px;
+  }
+
+  #contact-details .map{
+    width: 100%;
+  }
+
+  /* to make in one column */
+  #form-details{
+    margin: 10px;
+    padding: 30px 10px;
+    flex-wrap: wrap;
+  }
+
+  #form-details form{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+      #form-details form h2{
+        color:black;
+      }
+
+  /* cart page mobile  */
+  #cart-add{
+    flex-direction: column;
+  }
+  #coupon{
+    width: 100%;
+  }
+  #subtotal{
+    width: 100%;
+    padding: 20px;
+  }
+
+  .slider-container {
+   width: 100%;
+  height: 56.25%;
+  }
+
+  
+
+/* to change copyright align */
+footer .copyright{
+  text-align: start;
+}
+  footer .follow .icon{
+     display: flex;
+  gap: 10px;
+  }
+
+  .weprovide-text {
+  margin: 15px 0 -5px 0;
+  
+  }
+
+/* #feature2 {
+   
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  
+}
+ */
+
+  #banner h2{
+  padding: 13px 0 4px 10px;
+  }
+
+  .jeancard-container {
+    justify-content: space-evenly;
+  }
+
+    #sm-banner .banner-box2{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("https://forum.allkpop.com/suite/gallery/raw-image/5040-bts-butter-concept-photos-version-1-j-hope/?size=large"); 
+  }
+
+ 
+}

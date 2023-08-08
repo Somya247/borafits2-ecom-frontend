@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+<!-- icon css bootstrap -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+
+</head>
+
+<body>
+  
+
+  <section id ="header">
+<!-- main logo -->
+    <!-- main logo -->
+  <a href="#">
+    <img class= "header-logo" src="static/img/bora-fits-low-resolution-logo-color-on-transparent-background.png" class="logo" alt="">
+</a>
+
+<!--navabr -->
+    <div>
+      <ul id="navbar">
+      <li><a  href="/">Home</a></li>
+        <li><a class="active" href="{{ url_for('shop') }}">Shop</a></li>
+        <li><a href="{{ url_for('blog') }}">Blog </a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact Us</a>
+        <li id="lg-bag"><a href="{{ url_for('cart') }}"><i class="bi bi-bag-fill"></i></a></li>
+        <!-- close button -->
+        <a href="#" id="close"><i class="bi bi-x-circle"></i></a>
+
+<!--heart bag icon svg -->
+        <!--         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+  <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5ZM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1Zm0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+</svg> -->
+      </ul>
+    </div>
+
+    <!-- for responsiveness -->
+    <div id="mobile">
+ 
+      <a href="cart.html"><i class="bi bi-bag-fill"></i></a>
+       <!-- for hamburger menu -->
+       <i id="bar" class="bi bi-list"></i>
+    </div>
+
+  </section>
+
+<!-- page header section -->
+  <section id ="page-header">
+    <h1>Super saver deals</h1>
+    <h3>Save more with coupons up to 70% off! </h3>
+  </section>
+
+
+
+<!-- products -->
+<section id="product1"class="section-p1">
+<div class="pro-container">
+<div class="pro" onclick="window.location.href='sproduct.html';"> <!--when someone clicks on a product it will take them to product detailed description -->
+
+  <!-- product 1 -->
+    <img src="https://i.pinimg.com/564x/12/1b/eb/121bebcc59485b757a9a003e66c64f78.jpg" alt="">
+    <div class="des">
+<span>adidas</span>
+<h5>Multicolor Bomber Jacket</h5>
+<div class="star">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+</div>
+<h4> ₹777 </h4>
+</div>
+<a href="#"><i class="bi bi-cart cart"></i></a> 
+
+<!-- cart svg 
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart " viewBox="0 0 16 16">
+    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+  </svg> -->
+
+
+</div>
+
+<!-- product 2 card -->
+<div class="pro">
+  <img src="https://i.pinimg.com/564x/b2/20/2d/b2202da19f2ef10b3f6eb701a7cabc81.jpg" alt="">
+  <div class="des">
+<span>LV</span>
+<h5>Red Long Jacket</h5>
+<div class="star">
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+</div>
+<h4>₹777</h4>
+</div>
+<a href="#"><i class="bi bi-cart cart"></i></a> 
+</div>
+
+<!-- product 3 card -->
+<div class="pro">
+  <img src="https://i.pinimg.com/564x/f4/dd/3f/f4dd3f0873f662b693f14423a9ef2543.jpg" alt="">
+  <div class="des">
+<span>Levi's</span>
+<h5>Jacket</h5>
+<div class="star">
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+</div>
+<h4>₹777</h4>
+</div>
+<a href="#"><i class="bi bi-cart cart"></i></a> 
+</div>
+
+<!-- product 4 card -->
+<div class="pro">
+  <img src="https://i.pinimg.com/564x/dc/40/25/dc402593bfd0f83b66d32707a3defbaf.jpg" alt="">
+  <div class="des">
+<span>adidas</span>
+<h5>Oversized Jacket</h5>
+<div class="star">
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+</div>
+<h4>₹777</h4>
+</div>
+<a href="#"><i class="bi bi-cart cart"></i></a> 
+</div>
+
+<!-- product 5 card -->
+<div class="pro">
+  <img src="https://i.pinimg.com/originals/e5/9b/dd/e59bdd6bef6e62f122d989927c226465.jpg" alt="">
+  <div class="des">
+<span>Joonbug</span>
+<h5>Half Jacket</h5>
+<div class="star">
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+</div>
+<h4>₹777</h4>
+</div>
+<a href="#"><i class="bi bi-cart cart"></i></a> 
+</div>
+
+<!-- product 6 card -->
+<div class="pro">
+  <img src="https://i.pinimg.com/564x/b7/8b/99/b78b992d8fa3809af03b0c6e79e8d290.jpg" alt="">
+  <div class="des">
+<span>Pastel</span>
+<h5>Bomber Jacket</h5>
+<div class="star">
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+</div>
+<h4>₹777</h4>
+</div>
+<a href="#"><i class="bi bi-cart cart"></i></a> 
+</div>
+
+<!-- product 7 card -->
+<div class="pro">
+  <img src="https://i.pinimg.com/564x/30/12/42/30124241f74df14aacd8fb13b90351a3.jpg" alt="">
+  <div class="des">
+<span>Pastel</span>
+<h5>Bomber Jacket</h5>
+<div class="star">
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+</div>
+<h4>₹777</h4>
+</div>
+<a href="#"><i class="bi bi-cart cart"></i></a> 
+</div>
+
+<!-- product 8 card -->
+<div class="pro">
+  <img src="https://i.pinimg.com/originals/a6/f7/05/a6f70526fe9998d24d1a9b532a255f66.jpg" alt="">
+  <div class="des">
+<span>ON</span>
+<h5>Rock Half Jacket</h5>
+<div class="star">
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+</div>
+<h4>₹777</h4>
+</div>
+<a href="#"><i class="bi bi-cart cart"></i></a> 
+</div>
+
+  <!-- Product 9 card -->
+  <div class="pro">
+      <img src="https://i.pinimg.com/564x/c5/fe/f9/c5fef9c0c06ed1f4b2848c35efa80d6b.jpg" alt="">
+      <div class="des">
+  <span>Fila</span>
+  <h5>Jacket</h5>
+  <div class="star">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+  </div>
+  <h4>₹777</h4>
+  </div>
+  <a href="#"><i class="bi bi-cart cart"></i></a>  
+  </div>
+  
+  <!-- product 10 card -->
+  <div class="pro">
+    <img src="https://i.pinimg.com/originals/17/79/b2/1779b2aa668903fb5d24e61ca64eff83.jpg" alt="">
+    <div class="des">
+  <span>JITB</span>
+  <h5>Black Coat</h5>
+  <div class="star">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+  </div>
+  <h4>₹777</h4>
+  </div>
+  <a href="#"><i class="bi bi-cart cart"></i></a> 
+  </div>
+  
+  <!-- product 11 card -->
+  <div class="pro">
+    <img src="https://i.pinimg.com/564x/53/83/24/538324456096ef2f44b66dc7c9d443aa.jpg" alt="">
+    <div class="des">
+  <span>JITB</span>
+  <h5>Black Coat</h5>
+  <div class="star">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+  </div>
+  <h4>₹777</h4>
+  </div>
+  <a href="#"><i class="bi bi-cart cart"></i></a> 
+  </div>
+  
+  <!-- product 12 card -->
+  <div class="pro">
+    <img src="https://i.pinimg.com/originals/af/f5/aa/aff5aa3eb9b40d5288b88f35de06aa46.jpg" alt="">
+    <div class="des">
+  <span>adidas</span>
+  <h5>Stylish Jacket</h5>
+  <div class="star">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+  </div>
+  <h4>₹777</h4>
+  </div>
+  <a href="#"><i class="bi bi-cart cart"></i></a> 
+  </div>
+  
+  <!-- product 13 card -->
+  <div class="pro">
+    <img src="https://i.pinimg.com/originals/ae/09/f7/ae09f7be4c2a107803e362e55fcff374.jpg" alt="">
+    <div class="des">
+  <span>Butter</span>
+  <h5>Butter Jacket</h5>
+  <div class="star">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+  </div>
+  <h4>₹777</h4>
+  </div>
+  <a href="#"><i class="bi bi-cart cart"></i></a> 
+  </div>
+  
+  <!-- product 14 card -->
+  <div class="pro">
+    <img src="https://i.pinimg.com/originals/8c/c6/42/8cc642a327a5ad5a25109695ce0629b2.jpg" alt="">
+    <div class="des">
+  <span>LV</span>
+  <h5>LV Yellow Jacket</h5>
+  <div class="star">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+  </div>
+  <h4>$78</h4>
+  </div>
+  <a href="#"><i class="bi bi-cart cart"></i></a> 
+  </div>
+  
+  <!-- product 15 card -->
+  <div class="pro">
+    <img src="https://i.pinimg.com/originals/0e/85/d4/0e85d4ab0457297a618af3489b413d8e.jpg" alt="">
+    <div class="des">
+  <span>LV</span>
+  <h5>LV Jacket</h5>
+  <div class="star">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+  </div>
+  <h4>₹777</h4>
+  </div>
+  <a href="#"><i class="bi bi-cart cart"></i></a> 
+  </div>
+  
+  <!-- product 16 card -->
+  <div class="pro">
+    <img src="https://i.pinimg.com/564x/aa/ad/30/aaad305b26fce2c5e3595e6f17ca134d.jpg" alt="">
+    <div class="des">
+  <span>adidas</span>
+  <h5>Jacket</h5>
+  <div class="star">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+  </div>
+  <h4>₹777</h4>
+  </div>
+  <a href="#"><i class="bi bi-cart cart"></i></a> 
+  </div>
+  </div></section>
+  </section>
+ 
+<!-- pagination -->
+<section id ="pagination" class="section-p1">
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#"><i class="bi bi-forward-fill"></i></a>
+
+</section>
+
+  <!-- newsletter -->
+
+  <!-- class section-p1 for padding and space and class="section-m1 for margin  -->
+  <section id="newsletter" class="section-p1" class="section-m1">
+    <div class="newstext">
+    <h4>Sign Up For Newsletters</h4>
+    <p>Get e-mail updates about shop and <span>Special Offers</span></p>
+    </div>
+        
+    <div class="form">
+      <input type ="text" placeholder="Your e-mail address">
+    <button class="normal">Sign Up</button>
+
+</div>
+
+  </section>
+
+  <!-- footer -->
+<footer class="section-p1">
+<div class="col">
+  <img class="logo" src="img/logo.png" alt="">
+  <h4>Contact</h4>
+  <p><strong>Address:</strong> 562 Wellington Road, Street 32, San Francisco</p>
+  <p><strong>Phone:</strong> +01 2222 365 / (+91) 01 2345 6789</p>
+  <p><strong>Hours:</strong> 10:00-18:00, Mon - Sat</p>
+
+  <!-- social media icons -->
+<div class="follow">
+<h4>Follow Us</h4>
+<div class="icon">
+  <i class="bi bi-facebook"></i>
+  <i class="bi bi-twitter"></i>
+  <i class="bi bi-instagram"></i>
+  <i class="bi bi-pinterest"></i>
+  <i class="bi bi-youtube"></i>
+</div>
+</div>
+</div>
+
+<!-- about us section -->
+<div class="col">
+  <h4>About</h4>
+  <a href="#">About Us</a>
+  <a href="#">Delivery Information</a>
+  <a href="#">Privacy Policy</a>
+  <a href="#">Terms & Conditions</a>
+  <a href="#">Contact Us</a>
+  
+</div>
+
+<!-- my account section -->
+<div class="col">
+  <h4>My Acoount</h4>
+  <a href="#">Sign In</a>
+  <a href="#">View Cart</a>
+  <a href="#">My Wishlist</a>
+  <a href="#">Track Order</a>
+  <a href="#">Help</a>
+  
+</div>
+
+<!-- install app section -->
+<div class="col install">
+  <h4>Install App</h4>
+  <p>From App Store or Goolge Play Store</p>
+  <div class="row">
+    <img src="static/img/pay/app.jpg" alt="">
+    <img src="static/img/pay/play.jpg" alt="">
+  </div>
+  <!-- payment section -->
+ <div class="pay">
+  <p class="payp">Secured Payment Gateways</p>
+  <img src="static/img/pay/pay.png" alt="">
+</div>
+</div>
+
+<!-- copyright section -->
+<div class="copyright">
+  <p>© 2023, Tech etc - HTML CSS ECom Template</p>
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>

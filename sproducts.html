@@ -1,0 +1,309 @@
+<!-- single products and their descriptions -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+<!-- icon css bootstrap -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+
+</head>
+
+<body>
+  
+<!-- header -->
+  <section id ="header">
+<!-- main logo -->
+       <a href="#">
+    <img class= "header-logo" src="static/img/bora-fits-low-resolution-logo-color-on-transparent-background.png" class="logo" alt="">
+</a>
+
+    
+<!--navabr -->
+    <div>
+      <ul id="navbar">
+              <li><a  href="/">Home</a></li>
+        <li><a href="{{ url_for('shop') }}">Shop</a></li>
+        <li><a href="{{ url_for('blog') }}">Blog </a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact Us</a>
+        <li id="lg-bag"><a class="active" href="cart.html"><i class="bi bi-bag-fill"></i></a></li>
+        <!-- close button -->
+        <a href="#" id="close"><i class="bi bi-x-circle"></i></a>
+
+<!--heart bag icon svg -->
+        <!--         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+  <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5ZM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1Zm0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+</svg> -->
+      </ul>
+    </div>
+
+    <!-- for responsiveness -->
+    <div id="mobile">
+ 
+      <a href="cart.html"><i class="bi bi-bag-fill"></i></a>
+       <!-- for hamburger menu -->
+       <i id="bar" class="bi bi-list"></i>
+    </div>
+
+  </section>
+
+<!-- prouct details page -->
+<section id="prodetails" class="section-p1  ">
+    <!-- image  -->
+<div class="single-pro-image">
+    <img src="https://i.pinimg.com/564x/62/ef/cd/62efcdc691f035a98a9b4c5885727ab5.jpg" width="100%" id="MainImg" alt="">
+
+    <!-- small iamges -->
+
+<div class="small-img-group">
+<div class="small-img-col">  
+  <img src="https://i.pinimg.com/564x/f4/dd/3f/f4dd3f0873f662b693f14423a9ef2543.jpg" width="100%" class="small-img" alt="">    
+</div>
+
+<!-- 1 -->
+<div class="small-img-col">  
+    <img src="https://i.pinimg.com/564x/12/1b/eb/121bebcc59485b757a9a003e66c64f78.jpg" width="100%" class="small-img" alt="">    
+  </div>
+
+  <!-- 2 -->
+  <div class="small-img-col">  
+    <img src="https://i.pinimg.com/564x/b1/cb/ea/b1cbea2fdfb7e6c7a3f3a494dc9a38c0.jpg" width="100%" class="small-img" alt="">    
+  </div>
+
+  <!-- 3 -->
+  <div class="small-img-col">  
+    <img src="https://i.pinimg.com/736x/1c/42/28/1c4228629c5b5468d7ced05ac9e8e8a9.jpg" width="100%" class="small-img" alt="">    
+  </div>
+
+</div>
+
+</div>
+
+<!-- <h6>haha</h6>
+<h2>haha</h2>
+<h4>haha</h4> -->
+
+    <div class="single-pro-details">
+        <h6>Home / Jacket</h6>
+        <h4>Bomber Jacket</h4>
+        <h2>777</h2> <!--this section needs looking,  h6 and h4 tags looking same size -->
+        <select>
+        <option>Select Size</option>
+        <option>XL</option>
+        <option>XXL</option>
+        <option>Small</option>
+        <option>Large</option>
+        </select> 
+
+    <!-- drop down menu for selecting size -->
+    <input type="number" value="1">
+        <button class="normal">Add To Cart</button>
+        <!-- product description -->
+        <h4>Product Details</h4>
+<span>The Gildan Ultra Cotton Jacket is made from a substantial 6.0 oz. per
+sq. yd. fabric constructed from 100% cotton, this classic fit preshrunk
+jersey knit provides unmatched comfort with each wear. Featuring a taped neck
+and shoulder, and a seamless double-needle collar, and available in a range
+of colors, it offers it all in the ultimate head-turning package.</span>
+</div>
+</section>
+
+
+<!-- second products part | new arrivals products -->
+<section id="product1"class="section-p1 bg"> 
+    <h4>Featured Products</h4>
+    <!-- <p>Summer Collection New Morden Design</p> -->
+    <div class="pro-container">
+    <div class="pro">
+        <img src="https://i.pinimg.com/originals/84/3c/7d/843c7d70f9f4d82589dce02e7fde745f.jpg" alt="">
+        <div class="des">
+    <span>adidas</span>
+    <h5>Jacket</h5>
+    <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+    </div>
+    <h4>₹777</h4>
+    </div>
+    <a href="#"><i class="bi bi-cart cart"></i></a>  
+    </div>
+    
+    <!-- product 2 card -->
+    <div class="pro">
+      <img src="https://i.pinimg.com/originals/60/48/70/6048708fa8b0be33bd856e4d41f324af.jpg" alt="">
+      <div class="des">
+    <span>adidas</span>
+    <h5>Jacket</h5>
+    <div class="star">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+    </div>
+    <h4>₹777</h4>
+    </div>
+    <a href="#"><i class="bi bi-cart cart"></i></a> 
+    </div>
+    
+    <!-- product 3 card -->
+    <div class="pro">
+      <img src="https://i.pinimg.com/originals/86/39/e3/8639e324ee42e81eac54af7c84487cb6.jpg" alt="">
+      <div class="des">
+    <span>adidas</span>
+    <h5>Jacket</h5>
+    <div class="star">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+    </div>
+    <h4>₹777</h4>
+    </div>
+    <a href="#"><i class="bi bi-cart cart"></i></a> 
+    </div>
+    
+    <!-- product 4 card -->
+    <div class="pro">
+      <img src="https://i.pinimg.com/originals/6a/05/ac/6a05ac290bfcd43ffa90b725e88c8763.jpg" alt="">
+      <div class="des">
+    <span>adidas</span>
+    <h5>Jacket</h5>
+    <div class="star">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+    </div>
+    <h4>₹777</h4>
+    </div>
+    <a href="#"><i class="bi bi-cart cart"></i></a> 
+    </div>
+
+    </div>
+      <div class="formorebutton">
+<button class="formore"> Explore More <i class="bi bi-arrow-right-square-fill"></i></button>
+</div>
+
+    </section>
+
+  <!-- newsletter -->
+
+  <!-- class section-p1 for padding and space and class="section-m1 for margin  -->
+  <section id="newsletter" class="section-p1" class="section-m1">
+    <div class="newstext">
+    <h4>Sign Up For Newsletters</h4>
+    <p>Get e-mail updates about shop and <span>Special Offers</span></p>
+    </div>
+        
+    <div class="form">
+      <input type ="text" placeholder="Your e-mail address">
+    <button class="normal">Sign Up</button>
+
+</div>
+
+  </section>
+
+  <!-- footer -->
+<footer class="section-p1">
+<div class="col">
+  <img class="logo" src="img/logo.png" alt="">
+  <h4>Contact</h4>
+  <p><strong>Address:</strong> 562 Wellington Road, Street 32, San Francisco</p>
+  <p><strong>Phone:</strong> +01 2222 365 / (+91) 01 2345 6789</p>
+  <p><strong>Hours:</strong> 10:00-18:00, Mon - Sat</p>
+
+  <!-- social media icons -->
+<div class="follow">
+<h4>Follow Us</h4>
+<div class="icon">
+  <i class="bi bi-facebook"></i>
+  <i class="bi bi-twitter"></i>
+  <i class="bi bi-instagram"></i>
+  <i class="bi bi-pinterest"></i>
+  <i class="bi bi-youtube"></i>
+</div>
+</div>
+</div>
+
+<!-- about us section -->
+<div class="col">
+  <h4>About</h4>
+  <a href="#">About Us</a>
+  <a href="#">Delivery Information</a>
+  <a href="#">Privacy Policy</a>
+  <a href="#">Terms & Conditions</a>
+  <a href="#">Contact Us</a>
+  
+</div>
+
+<!-- my account section -->
+<div class="col">
+  <h4>My Acoount</h4>
+  <a href="#">Sign In</a>
+  <a href="#">View Cart</a>
+  <a href="#">My Wishlist</a>
+  <a href="#">Track Order</a>
+  <a href="#">Help</a>
+  
+</div>
+
+<!-- install app section -->
+<div class="col install">
+  <h4>Install App</h4>
+  <p>From App Store or Goolge Play Store</p>
+  <div class="row">
+    <img src="static/img/pay/app.jpg" alt="">
+    <img src="static/img/pay/play.jpg" alt="">
+  </div>
+  <!-- payment section -->
+  <div class="pay">
+  <p class= "payp">Secured Payment Gateways</p>
+  <img src="static/img/pay/pay.png" alt="">
+</div>
+</div>
+
+<!-- copyright section -->
+<div class="copyright">
+  <p>© 2023, Tech etc - HTML CSS ECom Template</p>
+</div>
+
+</footer>
+
+<!-- for small image to appear on big image place -->
+<script>
+    // take a variable
+var MainImg = document.getElementById("MainImg");
+var smallimg = document.getElementsByClassName("small-img")
+
+// to replace small image source with main image when the image is clicked
+smallimg[0].onclick= function() {
+MainImg.src = smallimg[0].src;
+}
+smallimg[1].onclick = function(){
+MainImg.src = smallimg[1].src;
+}
+document.getElementsByClassName("small-img");
+smallimg[2].onclick = function(){
+MainImg.src = smallimg[2].src;
+}
+smallimg[3].onclick= function () {
+MainImg.src = smallimg[3].src;
+}
+</script>
+
+<script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+<!-- icon css bootstrap -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+
+</head>
+
+<body>
+  
+
+  <section id ="header">
+
+   <!-- main logo -->
+  <a href="#">
+    <img class= "header-logo" src="static/img/bora-fits-low-resolution-logo-color-on-transparent-background.png" class="logo" alt="">
+</a>
+
+<!--navabr -->
+    <div>
+      <ul id="navbar">
+             <li><a href="/">Home</a></li>
+        <li><a href="{{ url_for('shop') }}">Shop</a></li>
+        <li><a href="{{ url_for('blog') }}">Blog </a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a class="active" href="{{ url_for('contact') }}">Contact Us</a>
+       <li id="lg-bag"><a href="{{ url_for('cart') }}"><i class="bi bi-bag-fill"></i></a></li>
+        <!-- close button -->
+        <a href="#" id="close"><i class="bi bi-x-circle"></i></a>
+
+<!--heart bag icon svg -->
+        <!--         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+  <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5ZM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1Zm0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+</svg> -->
+      </ul>
+    </div>
+
+    <!-- for responsiveness -->
+    <div id="mobile">
+ 
+      <a href="cart.html"><i class="bi bi-bag-fill"></i></a>
+       <!-- for hamburger menu -->
+       <i id="bar" class="bi bi-list"></i>
+    </div>
+
+  </section>
+
+<!-- page header section -->
+  <section id ="page-header" class="contact-header">
+    <h2>Let's Talk</h2>
+    <p>Leave a message, we love to hear from you</p>
+   
+  </section>
+
+
+
+<!--contact address details and map  -->
+<section id="contact-details" class="section-p1">
+
+    <!-- conact part -->
+<div class="details">
+<span>GET IN TOUCH</span>
+<h2>Visit one of our agency locations or contact us today</h2>
+<h3>Head Office</h3>
+
+<!-- icons -->
+<div>
+    <!-- location icon -->
+        <li>
+        <i class="bi bi-geo-alt-fill"></i>
+        <p>56 Glassford Street Glasgow G1 1UL New York</p>
+        </li>
+
+<!-- envelope icon -->
+        <li>
+        <i class="bi bi-envelope-at-fill"></i>
+        <p>contact@example.com</p>
+        </li>
+
+<!-- phone icon -->
+        <li>
+        <i class="bi bi-telephone-fill"></i>
+        <p>9283920139</p>
+        </li>
+
+<!-- clock icon -->
+        <li>
+        <i class="bi bi-clock-fill"></i>
+        <p>Mon-Sat : 9.00am - 16.00pm</p>
+        </li>
+ 
+</div>
+</div>
+
+<!-- map part -->
+<div class="map">
+    <!-- embeded an iframe of map from google map -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742480.9436057154!2d83.40126603496786!3d23.648530195890817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398b2386df480857%3A0x62c5b809eee29004!2sJharkhand!5e0!3m2!1sen!2sin!4v1679605447835!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</div>
+</section>
+
+<!-- form -->
+<section id="form-details">
+<form action="">
+<span>LEAVE A MESSAGE</span>
+<h2>We love to hear from you</h2>
+<input type="text" placeholder="Your Name">
+<input type="text" placeholder="E-mail">
+<input type="text" placeholder="Subject">
+<textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+<button class="normal">Submit</button>
+</form>
+
+<!-- people member part -->
+<div class="people">
+
+    <div>
+    <img src="static/img/people/1.png"alt="">
+    <p><span>John Doe </span> Senior Marketing Manager <br> Phone: + 000 123000 77 88 <br> Email: contact@example.com</p>
+    </div>
+
+
+    <div>
+    <img src="static/img/people/2.png" alt="">
+    <p><span>William Smith</span> Senior Marketing Manager <br> Phone: +000123 000 77-88 <br> Email: contact@example.com</p>
+    </div>
+
+    <div>
+    <img src="static/img/people/3.png" alt="">
+    <p><span>Emma Stone</span> Senior Marketing Manager <br> Phone: + 000 123000 77 88 <br> Email: contact@example.com</p>
+    </div>
+
+</div>
+</section>
+
+
+ <!-- newsletter -->
+
+  <!-- class section-p1 for padding and space and class="section-m1 for margin  -->
+  <section id="newsletter" class="section-p1" class="section-m1">
+    <div class="newstext">
+    <h4>Sign Up For Newsletters</h4>
+    <p>Get e-mail updates about shop and <span>Special Offers</span></p>
+    </div>
+        
+    <div class="form">
+      <input type ="text" placeholder="Your e-mail address">
+    <button class="normal">Sign Up</button>
+
+</div>
+
+  </section>
+
+  <!-- footer -->
+<footer class="section-p1">
+<div class="col">
+  <img class="logo" src="static/img/logo.png" alt="">
+  <h4>Contact</h4>
+  <p><strong>Address:</strong> 562 Wellington Road, Street 32, San Francisco</p>
+  <p><strong>Phone:</strong> +01 2222 365 / (+91) 01 2345 6789</p>
+  <p><strong>Hours:</strong> 10:00-18:00, Mon - Sat</p>
+
+  <!-- social media icons -->
+<div class="follow">
+<h4>Follow Us</h4>
+<div class="icon">
+  <i class="bi bi-facebook"></i>
+  <i class="bi bi-twitter"></i>
+  <i class="bi bi-instagram"></i>
+  <i class="bi bi-pinterest"></i>
+  <i class="bi bi-youtube"></i>
+</div>
+</div>
+</div>
+
+<!-- about us section -->
+<div class="col">
+  <h4>About</h4>
+  <a href="#">About Us</a>
+  <a href="#">Delivery Information</a>
+  <a href="#">Privacy Policy</a>
+  <a href="#">Terms & Conditions</a>
+  <a href="#">Contact Us</a>
+  
+</div>
+
+<!-- my account section -->
+<div class="col">
+  <h4>My Acoount</h4>
+  <a href="#">Sign In</a>
+  <a href="#">View Cart</a>
+  <a href="#">My Wishlist</a>
+  <a href="#">Track Order</a>
+  <a href="#">Help</a>
+  
+</div>
+
+<!-- install app section -->
+<div class="col install">
+  <h4>Install App</h4>
+  <p>From App Store or Goolge Play Store</p>
+  <div class="row">
+    <img src="static/img/pay/app.jpg" alt="">
+    <img src="static/img/pay/play.jpg" alt="">
+  </div>
+  <!-- payment section -->
+  <div class="pay">
+  <p class= "payp">Secured Payment Gateways</p>
+  <img src="static/img/pay/pay.png" alt="">
+</div>
+</div>
+
+<!-- copyright section -->
+<div class="copyright">
+  <p>© 2023, Tech etc - HTML CSS ECom Template</p>
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>

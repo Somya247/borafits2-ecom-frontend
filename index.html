@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  
+<!-- icon css bootstrap -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+
+
+
+  <section id ="header">
+<!-- main logo -->
+    <a href="#">
+    <img class= "header-logo" src="static/img/bora-fits-low-resolution-logo-color-on-transparent-background.png" class="logo" alt="">
+</a>
+
+
+<!--navabr -->
+    <div>
+      <ul id="navbar">
+<li><a class="active" href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="blog.html">Blog </a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li id="lg-bag"><a href="cart.html"><i class="bi bi-bag-fill"></i></a></li>
+        
+        <!-- close button -->
+        <a href="#" id="close"><i class="bi bi-x-circle"></i></a>
+
+      </ul>
+    </div>
+
+    <!-- for responsiveness -->
+    <div id="mobile">
+ 
+      <a href="cart.html"><i class="bi bi-bag-fill"></i></a>
+       <!-- for hamburger menu -->
+       <i id="bar" class="bi bi-list"></i>
+    </div>
+
+  </section>
+
+
+  <!-- slider -->
+    <div class="slider-container">
+      <a href= "https://in.pinterest.com/pin/24347654226874324/"><img class="slide" src="https://i.pinimg.com/originals/92/c9/7a/92c97a4de60f4ec18445567de879363a.jpg"  alt="Image 1" ></a>
+      
+      <a href= "https://in.pinterest.com/pin/584834701622258857/"><img class="slide" src="https://i.pinimg.com/originals/25/12/ba/2512ba4e5d3d7d22c8af0d5ad129c2d1.jpg" alt="Image 2"></a>
+      
+      <a href="https://in.pinterest.com/pin/682858362274161651/"><img class="slide" src="https://i.pinimg.com/originals/68/ae/89/68ae89fa9ee3182e3a5b61af4efe5e96.jpg" alt="Image 3"></a>
+      
+     <a href= "https://in.pinterest.com/pin/617274692700338079/"><img class="slide" src="https://i.pinimg.com/originals/c0/bb/84/c0bb849c0461ea37c94d8cc9e26b895b.jpg" alt="Image 4"></a>
+    </div>
+      
+ <!-- products| new arrivals products -->
+<section id="product1"class="section-p1">
+  <h3>New Arrivals</h3>
+  <p>Summer Collection New Morden Design</p>
+  <div class="pro-container">
+    <div class="pro" onclick="window.location.href='{{ url_for('sproducts') }}';"> <!--when someone clicks on a product it will take them to product detailed description -->
+      <img src="https://i.pinimg.com/564x/62/ef/cd/62efcdc691f035a98a9b4c5885727ab5.jpg" alt=""></a>
+      <div class="des">
+  <span>adidas</span>
+  <h5>Black Varsity Jacket</h5>
+  <div class="star">
+     <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+  </div>
+  <h4>&#8377; 788</h4>
+  </div>
+  <a href="#"><i class="bi bi-cart cart"></i></a>  
+  </div>
+  
+  <!-- product 2 card -->
+  <div class="pro">
+    <img src="https://i.pinimg.com/564x/b5/b4/47/b5b4474a254755c168e0891bc80192dd.jpg" alt="">
+    <div class="des">
+  <span>adidas</span>
+  <h5>Teal Varsity Jacket</h5>
+  <div class="star">
+   <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+  </div>
+  <h4>&#8377; 708</h4>
+  </div>
+  <a href="#"><i class="bi bi-cart cart"></i></a> 
+  </div>
+  
+  <!-- product 3 card -->
+  <div class="pro">
+    <a href="https://in.pinterest.com/pin/68745136311/"><img src="https://i.pinimg.com/originals/54/0c/9b/540c9b10289ae79b8909dc19d0d95b9e.jpg" alt=""></a>
+    <div class="des">
+  <span>adidas</span>
+  <h5>Bomber Jacket</h5>
+  <div class="star">
+   <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+  </div>
+  <h4>&#8377; 889</h4>
+  </div>
+  <a href="#"><i class="bi bi-cart cart"></i></a> 
+  </div>
+  
+  <!-- product 4 card -->
+  <div class="pro">
+   <a href="https://in.pinterest.com/pin/1021613496701037277/"> <img src="https://i.pinimg.com/564x/99/4d/1b/994d1b27dbbdebd829ad976145da6ccf.jpg" alt=""></a>
+    <div class="des">
+  <span>adidas</span>
+  <h5>Heartbreak Puffer Jacket</h5>
+  <div class="star">
+   <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+  </div>
+  <h4>&#8377; 789</h4>
+  </div>
+  <a href="#"><i class="bi bi-cart cart"></i></a> 
+  </div>
+  
+  <!-- product 5 card -->
+  <div class="pro">
+    <img src="https://i.pinimg.com/564x/62/ef/cd/62efcdc691f035a98a9b4c5885727ab5.jpg" alt="">
+    <div class="des">
+  <span>adidas</span>
+  <h5>Cartoon Astronaut T-shirt</h5>
+  <div class="star">
+    <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+  </div>
+  <h4>&#8377; 789</h4>
+  </div>
+  <a href="#"><i class="bi bi-cart cart"></i></a> 
+  </div>
+  
+  <!-- product 6 card -->
+  <div class="pro">
+    <img src="https://i.pinimg.com/originals/ef/08/39/ef08395f4cd38ba100d2b8fa2b478f0b.jpg" alt="">
+    <div class="des">
+  <span>adidas</span>
+  <h5>Oversized Puffed Hoodie</h5>
+  <div class="star">
+    <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+  </div>
+  <h4>&#8377; 789</h4>
+  </div>
+  <a href="#"><i class="bi bi-cart cart"></i></a> 
+  </div>
+  
+  <!-- product 7 card -->
+  <div class="pro">
+    <img src="https://i.pinimg.com/736x/1c/42/28/1c4228629c5b5468d7ced05ac9e8e8a9.jpg" alt="">
+    <div class="des">
+  <span>adidas</span>
+  <h5>Racer Jacket</h5>
+  <div class="star">
+    <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+  </div>
+  <h4>&#8377; 789</h4>
+  </div>
+  <a href="#"><i class="bi bi-cart cart"></i></a> 
+  </div>
+  
+  <!-- product 8 card -->
+  <div class="pro">
+    <img src="https://i.pinimg.com/564x/b1/cb/ea/b1cbea2fdfb7e6c7a3f3a494dc9a38c0.jpg" alt="">
+    <div class="des">
+  <span>adidas</span>
+  <h5>Sky Blue Bomber Jacket</h5>
+  <div class="star">
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+  </div>
+  <h4>&#8377; 789</h4>
+  </div>
+  <a href="#"><i class="bi bi-cart cart"></i></a> 
+  </div>
+  </div>
+
+<div class="formorebutton">
+<button class="formore"> Explore More <i class="bi bi-arrow-right-square-fill"></i></button>
+</div>
+  
+  </section>
+
+<!-- banner -->
+<section id="banner" class="section-m1">
+<h2>Best Jean Jackets in Town Up to <span>70% off</span></h2>
+<button class="normal">Explore More</button>
+</section>
+
+  <div class="jeancard-container">
+  <div class="jeancard">
+    <img class="jeancard-image" src="https://i.pinimg.com/originals/d9/f6/b3/d9f6b398d547a367de63784c6815ab7b.jpg" alt="Image">
+    <div class="jeancard-content">
+      <!-- <p class="jeancard-title">Card Title 1</p> -->
+      <h6>Buy @ ₹777</h6>
+      <!-- <p class="jeancard-text">This is the content of Card 1.</p> -->
+    </div>
+  </div>
+  
+  <div class="jeancard">
+    <img class="jeancard-image" src="https://i.pinimg.com/originals/6a/05/ac/6a05ac290bfcd43ffa90b725e88c8763.jpg" alt="Image">
+    <div class="jeancard-content">
+      <h6>Buy @ ₹777</h6>
+      <!-- <h3 class="jeancard-title">Card Title 2</h3>
+      <p class="jeancard-text">This is the content of Card 2.</p> -->
+    </div>
+  </div>
+  
+  
+  <div class="jeancard">
+    <img class="jeancard-image" src="https://i.pinimg.com/originals/d8/94/a3/d894a3f57cc10b6d64ba5550fb436352.jpg" alt="Image">
+    <div class="jeancard-content">
+      <h6>Buy @ ₹777</h6>
+      <!-- <h3 class="jeancard-title">Card Title 1</h3>
+      <p class="jeancard-text">This is the content of Card 1.</p> -->
+    </div>
+  </div>
+  
+  <div class="jeancard">
+    <img class="jeancard-image" src="https://i.pinimg.com/originals/38/44/38/384438ac6e8ff3958f6521d175e64c79.jpg" alt="Image">
+    <div class="jeancard-content">
+      <h6>Buy @ ₹777</h6>
+      <!-- <h3 class="jeancard-title">Card Title 2</h3>
+      <p class="jeancard-text">This is the content of Card 2.</p> -->
+    </div>
+  </div>
+  
+  <div class="jeancard">
+    <img class="jeancard-image" src="https://i.pinimg.com/originals/27/0b/8e/270b8e3390971481f6220b2df66cf4a3.jpg" alt="Image">
+    <div class="jeancard-content">
+      <h6>Buy @ ₹777</h6>
+      <!-- <h3 class="jeancard-title">Card Title 1</h3>
+      <p class="jeancard-text">This is the content of Card 1.</p> -->
+    </div>
+  </div>
+  
+  <div class="jeancard">
+    <img class="jeancard-image" src="https://pm1.aminoapps.com/6462/d1f86ebb85efd03918daee503412bdfeff6b08e1_hq.jpg" alt="Image">
+    <div class="jeancard-content">
+      <h6>Buy @ ₹777</h6>
+      <!-- <h3 class="jeancard-title">Card Title 2</h3>
+      <p class="jeancard-text">This is the content of Card 2.</p> -->
+    </div>
+  </div>
+ 
+</div>
+
+  
+<!-- hero section -->
+  <section id ="hero">
+    <h4>Trade-in-offer</h4>
+    <h2>Super value deals</h2>
+    <h1>On all products</h1>
+    <p>Save more with coupons up to 70% off! </p>
+    <button >Shop Now</button>
+  </section>
+  
+  <!-- products -->
+<section id="product1"class="section-p1">
+<h3>Shop For Latest Jackets & Hoodies </h3>
+<!-- <p>WE HAVE ALL KINDS OF JACKETS AND HOODIES</p> -->
+<div class="pro-container">
+<div class="pro">
+    <img src="https://i.pinimg.com/originals/cb/c9/7b/cbc97b9e294cedccd42e6ef17d95b5a0.jpg" alt="">
+    <div class="des">
+<span>Artist Made </span>
+<h5> Artist Made Purple Hoodie</h5>
+<div class="star">
+    <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+</div>
+<h4>&#8377; 781</h4>
+</div>
+<a href="#"><i class="bi bi-cart cart"></i></a> 
+
+
+</div>
+
+<!-- product 2 card -->
+<div class="pro">
+  <img src="https://i.pinimg.com/originals/de/80/ba/de80ba931cc1dba2057279128da9a669.jpg" alt="">
+  <div class="des">
+<span>RJ</span>
+<h5>Yellow Patched Jacket</h5>
+<div class="star">
+ <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+</div>
+<h4>&#8377; 777</h4>
+</div>
+<a href="#"><i class="bi bi-cart cart"></i></a> 
+</div>
+
+<!-- product 3 card -->
+<div class="pro">
+  <img src="https://i.pinimg.com/originals/84/3c/7d/843c7d70f9f4d82589dce02e7fde745f.jpg" alt="">
+  <div class="des">
+<span>Blue</span>
+<h5>Bejewelled Glittery Jacket</h5>
+<div class="star">
+  <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+</div>
+<h4>&#8377; 613</h4>
+</div>
+<a href="#"><i class="bi bi-cart cart"></i></a> 
+</div>
+
+<!-- product 4 card -->
+<div class="pro">
+  <img src="https://i.pinimg.com/originals/60/48/70/6048708fa8b0be33bd856e4d41f324af.jpg" alt="">
+  <div class="des">
+<span>Calvin Klein</span>
+<h5>Denim Jacket</h5>
+<div class="star">
+ <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+</div>
+<h4>&#8377; 613</h4>
+</div>
+<a href="#"><i class="bi bi-cart cart"></i></a> 
+</div>
+
+<!-- product 5 card -->
+<div class="pro">
+  <img src="https://i.pinimg.com/originals/86/39/e3/8639e324ee42e81eac54af7c84487cb6.jpg" alt="">
+  <div class="des">
+<span>Namu</span>
+<h5>Sleeveless Denim Jacket</h5>
+<div class="star">
+<i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+</div>
+<h4>&#8377; 613</h4>
+</div>
+<a href="#"><i class="bi bi-cart cart"></i></a> 
+</div>
+
+<!-- product 6 card -->
+<div class="pro">
+  <img src="https://i.pinimg.com/originals/de/b3/8d/deb38d48bf062d2eecc958d881d34da9.jpg" alt="">
+  <div class="des">
+<span>adidas</span>
+<h5>Yellow Jacket Set</h5>
+<div class="star">
+  <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+</div>
+<h4>&#8377; 777</h4>
+</div>
+<a href="#"><i class="bi bi-cart cart"></i></a> 
+</div>
+
+<!-- product 7 card -->
+<div class="pro">
+  <img src="https://i.pinimg.com/originals/64/79/ba/6479baab114cafa636f23ca9578876c0.jpg" alt="">
+  <div class="des">
+<span>Gucci</span>
+<h5>Red Gucci Jacket</h5>
+<div class="star">
+  <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+</div>
+<h4>&#8377; 777</h4>
+</div>
+<a href="#"><i class="bi bi-cart cart"></i></a> 
+</div>
+
+<!-- product 8 card -->
+<div class="pro">
+  <img src="https://i.pinimg.com/originals/e3/35/dd/e335dd030965dcdbfa3a4163b8fcaf68.jpg" alt="">
+  <div class="des">
+<span>Celine</span>
+<h5>Red Leather Plain Jacket</h5>
+<div class="star">
+ <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+      <i class="bi bi-star"></i>
+</div>
+<h4>&#8377; 777</h4>
+</div>
+<a href="#"><i class="bi bi-cart cart"></i></a> 
+</div>
+</div>
+
+<div class="formorebutton">
+<button class="formore"> Explore More <i class="bi bi-arrow-right-square-fill"></i></button>
+</div>
+
+</section>
+
+  
+<!-- small banner 1 -->
+  <section id ="sm-banner" class="section-p1">
+
+    <div class="banner-box">
+      <h4>Crazy Deals!</h4>
+      <h2>buy 1 get 1 free!!</h2>
+      <span>The Artist Made Jackets are on sale at Bora-Fits</span>
+      <button class="white" >See More</button>
+    </div>
+
+<!-- small banner 2 -->
+      <div class="banner-box banner-box2">
+        <!-- <h4>Spring/Summer</h4> -->
+        <h2>Best Jean Jackets</h2>
+        <h2>on sale!!!</h2>
+        <span>Get Upto 50% off!!!</span>
+        <button class="white">See More</button>
+      </div>
+
+  </section>
+
+  <!-- tiny banner/text banners -->
+  <section id="banner3">
+    <!-- tiny banner 1 -->
+    <div class="banner-box">
+      <h2>Upcoming Seasons</h2>
+      <h3>Winter Collecion - 50% off! </h3>
+    </div>
+
+    <!-- tiny banner 2 -->
+    <div class="banner-box banner-box2">
+      <h2>New</h2>
+      <h3>Bomber Jacket Collection</h3>
+    </div>
+
+    <!-- tiny banner 3 -->
+    <div class="banner-box banner-box3">
+      <!-- <h2>T-Shirts</h2> -->
+      <h3>Soft Hoodies</h3>
+    </div>
+
+  </section>
+
+
+
+<div class="weprovide">
+  <p class="weprovide-text">We Provide</p>
+</div>
+  
+<!--  feature boxes -->
+<section id="feature" class="section-p1">
+    
+   
+  <!-- box-1 -->  
+<div class="fe-box">
+  <img src="static/img/features/f1.png" alt="">
+  <h6>Great Options </h6>
+  </div>
+
+  <!-- box-2 -->
+<div class="fe-box">
+  <img src="static/img/features/f2.png" alt="">
+  <h6>Fast Delivery </h6>
+  </div>
+
+  <!-- box-3 -->
+<div class="fe-box">
+  <img src="static/img/features/f3.png" alt="">
+  <h6>Good Prices </h6>
+  </div>
+
+  <!-- box-4 -->
+<div class="fe-box">
+  <img src="static/img/features/f4.png" alt="">
+  <h6>Amazing Offers </h6>
+  </div>
+
+  <!-- box-5 -->
+<div class="fe-box">
+  <img src="static/img/features/f5.png" alt="">
+  <h6>Free Shipping</h6>
+  </div>
+
+  <!-- box-6 -->
+<div class="fe-box">
+  <img src="static/img/features/f6.png" alt="">
+  <h6>24/7 Support </h6>
+  </div>
+
+</section>
+
+
+
+  <!-- newsletter -->
+
+  <!-- class section-p1 for padding and space and class="section-m1 for margin  -->
+  <section id="newsletter" class="section-p1" class="section-m1">
+    <div class="newstext">
+    <h4>Sign Up For Newsletters</h4>
+    <p>Get e-mail updates about shop and <span>Special Offers</span></p>
+    </div>
+        
+    <div class="form">
+      <input type ="text" placeholder="Your e-mail address">
+    <button class="normal">Sign Up</button>
+
+</div>
+
+  </section>
+
+  <!-- footer -->
+<footer class="section-p1">
+<div class="col">
+  <!-- <img class="logo" src="static/img/bora-fits-low-resolution-logo-color-on-transparent-background.png" alt=""> -->
+  <h4>Contact</h4>
+  <p><strong>Address:</strong> 562 Wellington Road, Street 32, San Francisco</p>
+  <p><strong>Phone:</strong> +01 2222 365 / (+91) 01 2345 6789</p>
+  <p><strong>Hours:</strong> 10:00-18:00, Mon - Sat</p>
+
+  <!-- social media icons -->
+<div class="follow">
+<h4>Follow Us</h4>
+<div class="icon">
+  <i class="bi bi-facebook"></i>
+  <i class="bi bi-twitter"></i>
+  <i class="bi bi-instagram"></i>
+  <i class="bi bi-pinterest"></i>
+  <i class="bi bi-youtube"></i>
+</div>
+</div>
+</div>
+
+<!-- about us section -->
+<div class="col">
+  <h4>About</h4>
+  <a href="#">About Us</a>
+  <a href="#">Delivery Information</a>
+  <a href="#">Privacy Policy</a>
+  <a href="#">Terms & Conditions</a>
+  <a href="#">Contact Us</a>
+  
+</div>
+
+<!-- my account section -->
+<div class="col">
+  <h4>My Account</h4>
+  <a href="#">Sign In</a>
+  <a href="#">View Cart</a>
+  <a href="#">My Wishlist</a>
+  <a href="#">Track Order</a>
+  <a href="#">Help</a>
+  
+</div>
+
+<!-- install app section -->
+<div class="col install">
+  <h4>Install App</h4>
+  <p>From App Store or Goolge Play Store</p>
+  <div class="row">
+    <img src="static/img/pay/app.jpg" alt="">
+    <img src="static/img/pay/play.jpg" alt="">
+  </div>
+  <!-- payment section -->
+  <div class="pay">
+  <p class= "payp">Secured Payment Gateways</p>
+  <img src="static/img/pay/pay.png" alt="">
+</div>
+</div>
+
+<!-- copyright section -->
+<div class="copyright">
+  <p>© 2023, Tech etc - HTML CSS Bootstrap JavaScript ECom Template</p>
+</div>
+
+</footer>
+
+
+
+  
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
